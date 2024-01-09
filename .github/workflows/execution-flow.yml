@@ -76,7 +76,7 @@ jobs:
       - name: Output contents
         run: ls
       - name: Deploy to Dev
-        run: echo "Deploying..."
+        run: echo "Deploying... to Dev env"
   
   deploy-Int:
     needs: deploy
