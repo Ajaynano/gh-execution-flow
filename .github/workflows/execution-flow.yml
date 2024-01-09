@@ -89,7 +89,7 @@ jobs:
             commit-message: PR 
             committer: GitHub <noreply@github.com>
             author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
-            branch: test-pr-develop
+            branch: develop
             title: '[Example] Update report'
             body: |
               -  pull request feature to develop
