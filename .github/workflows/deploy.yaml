@@ -1,16 +1,16 @@
-name: Deploy to Int env
-on:
-  pull_request:
-    types:
-      - closed
-    branches:
-     - 'main'
-jobs:
-    if_merged:
-      if: github.event.pull_request.merged == true
-      runs-on: ubuntu-latest
-      steps:
-        - run: |
-            echo updaeting k8 manifest for int values-version yaml
+# name: Deploy to Int env
+# on:
+#   pull_request:
+#     types:
+#       - closed
+#     branches:
+#      - 'main'
+# jobs:
+#     if_merged:
+#       if: github.event.pull_request.merged == true
+#       runs-on: ubuntu-latest
+#       steps:
+#         - run: |
+#             echo updaeting k8 manifest for int values-version yaml
 
 
