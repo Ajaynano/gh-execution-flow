@@ -21,7 +21,7 @@ jobs:
             commit-message: PR 
             committer: GitHub <noreply@github.com>
             author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
-            branch: feature/test-pr-develop
+            branch: release
             title: '[Example] Update report'
             body: |
               UPdate report
