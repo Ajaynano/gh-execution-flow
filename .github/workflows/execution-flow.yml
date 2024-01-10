@@ -95,7 +95,7 @@ jobs:
               [1]: https://github.com/peter-evans/create-pull-request
             base: release
             labels: automated-pr, cloud & regions
-            branch: develop
+            branch: feature/test=pr-develop
             assignees: Ajaynano
             reviewers: Ajaynano
 
