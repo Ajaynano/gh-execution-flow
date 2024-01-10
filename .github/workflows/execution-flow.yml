@@ -79,7 +79,7 @@ jobs:
       - name: Get code
         uses: actions/checkout@v3
         with:
-          ref: develop
+          ref: release
       - name: Reset promotion branch
         run: |
           git fetch origin main:main
@@ -92,7 +92,7 @@ jobs:
             commit-message: PR 
             committer: GitHub <noreply@github.com>
             author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
-            branch: release
+            branch: develop
             title: '[Example] Update report'
             body: |
               UPdate report
