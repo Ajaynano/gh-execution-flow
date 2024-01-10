@@ -70,7 +70,7 @@ jobs:
       - name: Output contents
         run: ls
       - name: Deploy to Dev
-        run: echo "Deploying... to Dev/stage testing testing - merge to release branch from feature/test-pr-develop"
+        run: echo "Deploying...  New CPR token"
   
   deploy-Int:
     needs: deploy
@@ -82,7 +82,7 @@ jobs:
         id: cpr
         uses: peter-evans/create-pull-request@v5
         with:
-            token: ${{ secrets.PAT_PR }}
+            token: ${{ secrets.PAT_CPR }}
             commit-message: PR 
             committer: GitHub <noreply@github.com>
             author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
@@ -98,5 +98,4 @@ jobs:
               report
               automated pr
             assignees: Ajaynano
-            reviewers: Ajaynano
 
