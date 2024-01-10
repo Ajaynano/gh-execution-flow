@@ -59,21 +59,21 @@ jobs:
   #       with:
   #         name: dist-files
   #         path: dist
-  deploy:
-    # needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Get build artifacts
-        uses: actions/download-artifact@v3
-        with:
-          name: dist-files
-      - name: Output contents
-        run: ls
-      - name: Deploy to Dev
-        run: echo "Deploying...  New CPR token"
+  # deploy:
+  #   # needs: build
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Get build artifacts
+  #       uses: actions/download-artifact@v3
+  #       with:
+  #         name: dist-files
+  #     - name: Output contents
+  #       run: ls
+  #     - name: Deploy to Dev
+  #       run: echo "Deploying...  New CPR token"
   
   deploy-Int:
-    needs: deploy
+    # needs: deploy
     runs-on: ubuntu-latest
     steps:
       - name: Get code
