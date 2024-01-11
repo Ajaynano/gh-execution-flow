@@ -7,8 +7,8 @@ jobs:
     steps:
       - name: Get code
         uses: actions/checkout@v3
-        with:
-          ref: develop
+        # with:
+        #   ref: develop
       # - name: Reset promotion branch
       #   run: |
       #     git fetch origin main:main
@@ -21,6 +21,7 @@ jobs:
             commit-message: PR 
             committer: GitHub <noreply@github.com>
             author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
+            base: main
             branch: release
             title: '[Example] Update report'
             body: |
